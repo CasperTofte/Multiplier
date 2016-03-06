@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Multiplier</string>
+    <string name="calculate">Beregn</string>
+    <string name="result">Resultat:</string>
 </resources>

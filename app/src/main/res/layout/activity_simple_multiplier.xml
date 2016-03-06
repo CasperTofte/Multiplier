@@ -10,7 +10,7 @@
     tools:context="com.example.caspertofte.multiplier.SimpleMultiplier">
 
     <LinearLayout
-        android:id="@+id/buttonfield"
+        android:id="@+id/ll_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -18,14 +18,14 @@
         android:layout_marginTop="100dp">
 
         <LinearLayout
-            android:id="@+id/line1"
+            android:id="@+id/ll_entryField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/minus"
+                android:id="@+id/btn_minus"
                 android:onClick="decrement"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
@@ -34,7 +34,7 @@
                 android:textSize="60sp" />
 
             <TextView
-                android:id="@+id/show_number"
+                android:id="@+id/txt_showNumber"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:gravity="center"
@@ -42,7 +42,7 @@
                 android:textSize="40sp" />
 
             <Button
-                android:id="@+id/plus"
+                android:id="@+id/btn_plus"
                 android:onClick="increment"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
@@ -52,31 +52,31 @@
 
         </LinearLayout>
         <Button
-            android:id="@+id/calculate_button"
+            android:id="@+id/btn_calculate"
             android:onClick="calculate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textAllCaps="false"
             android:background="#e4d652"
             android:textSize="40sp" />
         <LinearLayout
-            android:id="@+id/result_field"
+            android:id="@+id/ll_resultField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="20dp">
 
             <TextView
-                android:id="@+id/result_text"
+                android:id="@+id/txt_resultText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Result:"
+                android:text="@string/result"
                 android:textSize="40sp"/>
 
             <TextView
-                android:id="@+id/show_result"
+                android:id="@+id/txt_showResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0"
