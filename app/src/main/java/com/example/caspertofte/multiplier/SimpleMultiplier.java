@@ -13,21 +13,21 @@ public class SimpleMultiplier extends AppCompatActivity {
     // Decrements and displays the number when "-" button is pressed.
     public void decrement(View view){
         number = number - 1;
-        TextView displaydecrement = (TextView) findViewById(R.id.show_number);
+        TextView displaydecrement = (TextView) findViewById(R.id.txt_showNumber);
         displaydecrement.setText(" " + number);
     }
 
     // Increments and displays the number when "+" button is pressed.
     public void increment(View view){
         number = number + 1;
-        TextView displayincrement = (TextView) findViewById(R.id.show_number);
+        TextView displayincrement = (TextView) findViewById(R.id.txt_showNumber);
         displayincrement.setText(" " + number);
     }
 
     // Multiplies the number by 3 and displays the result.
     public void calculate(View view){
         result_nbr = number * 3;
-        TextView myTextViewcal = (TextView) findViewById(R.id.show_result);
+        TextView myTextViewcal = (TextView) findViewById(R.id.txt_resultText);
         myTextViewcal.setText(" " + result_nbr);
     }
 
